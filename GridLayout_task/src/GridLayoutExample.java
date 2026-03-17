@@ -19,7 +19,8 @@ public class GridLayoutExample {
 
 
         GridFrame.add(this.createJPanelOne());
-
+        GridFrame.add(this.createJPanelTwo());
+        GridFrame.add(this.createJPanelThree());
 
         GridFrame.setVisible(true);
         return GridFrame;
@@ -33,8 +34,20 @@ public class GridLayoutExample {
 
         return JPanelOne;
     }
+    public JPanel createJPanelTwo() {
+        JPanelTwo = new JPanel();
+        Border JPanelTwoBorder = BorderFactory.createTitledBorder("JPanel Two");
+        JPanelTwo.setBorder(JPanelTwoBorder);
+        JPanelTwo.setBackground(Color.gray);
+        return JPanelTwo;
+    }
 
-
-
+    public JPanel createJPanelThree() {
+        JPanelThree = new JPanel();
+        Border JPanelThreeBorder = BorderFactory.createTitledBorder("JPanel Three");
+        JPanelThree.setBorder(JPanelThreeBorder);
+        JPanelThree.setBackground(Color.green);
+        return JPanelThree;
+    }
 
 }
